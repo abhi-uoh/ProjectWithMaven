@@ -1,8 +1,8 @@
 package org.tut;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
 @Entity
 public class Student {
@@ -10,17 +10,9 @@ public class Student {
     private int id;
     private String name;
     private String city;
+    private Certificat certi;
 
-    public Student(int id, String name, String city) {
-        super();
-        this.id = id;
-        this.name = name;
-        this.city = city;
-    }
 
-    public Student() {
-        super();
-    }
 
     public int getId() {
         return id;
@@ -44,6 +36,14 @@ public class Student {
 
     public void setCity(String city) {
         this.city = city;
+    }
+
+    public Certificat getCerti() {
+        return certi;
+    }
+
+    public void setCerti(Certificat certi) {
+        this.certi = certi;
     }
 
     @Override

@@ -13,5 +13,9 @@
         <property name="show_sql">true</property>
         <mapping class="org.tut.Student"/>
         <mapping class="org.tut.Address"/>
+        <mapping class="org.tut.testing"/>
+        <mapping class="com.map.Question"/>
+        <mapping class="com.map.Answer"/>
+<!--        <mapping class="org.tut.EmDemo"/>-->
     </session-factory>
 </hibernate-configuration>
