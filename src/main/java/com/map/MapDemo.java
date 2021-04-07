@@ -44,18 +44,22 @@ public class MapDemo {
         //session
         Session s = factory.openSession();
         Transaction t = s.beginTransaction();
-
-        s.save(que);
-        s.save(que1);
-        s.save(ans);
-        s.save(ans1);
+//
+//        s.save(que);
+//        s.save(que1);
+//        s.save(ans);
+//        s.save(ans1);
 
 
         t.commit();
 
         Question que2=(Question)s.get(Question.class,101);
         System.out.println(que2.getQuestion());
+        System.out.println(que2.getQuestionId());
+//        System.out.println(que2.getAns().size());
         System.out.println(que2.getAns().getAnswer());
+
+        //session close
         s.close();
         factory.close();
 

@@ -9,13 +9,20 @@
         <property name="connection.username">root</property>
         <property name="connection.password">Uoh509!@</property>
         <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
-        <property name="hibernate.hbm2ddl.auto">create</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
         <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
         <mapping class="org.tut.Student"/>
         <mapping class="org.tut.Address"/>
         <mapping class="org.tut.testing"/>
         <mapping class="com.map.Question"/>
         <mapping class="com.map.Answer"/>
-<!--        <mapping class="org.tut.EmDemo"/>-->
+        <mapping class="com.mapping.Project"/>
+        <mapping class="com.mapping.Employee"/>
+
+
+
+
+        <!--        <mapping class="org.tut.EmDemo"/>-->
     </session-factory>
 </hibernate-configuration>

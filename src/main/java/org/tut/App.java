@@ -59,9 +59,5 @@ public class App
         session.close();
         System.out.println("DONE!!!!");
 
-
-
-
-
     }
 }
