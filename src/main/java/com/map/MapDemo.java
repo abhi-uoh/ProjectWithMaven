@@ -56,7 +56,7 @@ public class MapDemo {
         Question que2=(Question)s.get(Question.class,101);
         System.out.println(que2.getQuestion());
         System.out.println(que2.getQuestionId());
-//        System.out.println(que2.getAns().size());
+//      System.out.println(que2.getAns().size());
         System.out.println(que2.getAns().getAnswer());
 
         //session close

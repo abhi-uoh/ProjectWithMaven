@@ -47,6 +47,7 @@ public class Mapping {
         p1.setName("DLP");
         p2.setName("BOB");
 
+
         //object save;
 
         Session s = factory.openSession();
